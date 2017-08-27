@@ -6,7 +6,7 @@
     //displayGifs re-renders html to display the appropriate content
     function displayGifs() {
       var animal = $(this).attr("data-name");
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         animal + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     //creating an AJAX call for the animal being clicked
@@ -58,10 +58,6 @@
 
 
       })
-
-
-      
-
 
     });
     }
